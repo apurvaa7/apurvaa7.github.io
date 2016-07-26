@@ -1,0 +1,52 @@
+{
+ "children": [
+    {"name": "Counsellors", "size": 60,"sentiment":0,"year":"Y1","question":"Q2","comments":[{"comment":"comment1","park_name":"xyz"},
+	                                                                                          {"comment":"comment2","park_name":"abc"}]},
+      {"name": "Counsellors", "size": 60,"sentiment":0,"year":"Y1","question":"Q1","comments":[{"comment":"comment1","park_name":"xyz"},
+	                                                                                          {"comment":"comment2","park_name":"abc"}]},
+	
+     {"name": "Pork", "size": 40,"sentiment":-2,"year":"Y1","question":"Q2","comments":[{"comment":"Not many of the 'themed' days actually seemed to work out.  The kids often seemed like they were sitting around waiting for next area and most of staff was goofing around, not engaged or watching the kids.  Please also do not serve PORK at camp. Sometimes we weren't sure and no one at the park could confirm. This is really bad.","park_name":"Chase Park","sentiment":"Very Negative"},
+{ "comment":"The food was bad. My kids really disliked it. They don't eat pork and at times the sandwiches were ham.","park_name":"Union Park","sentiment":"Very Negative"},
+  {"comment":"I didn't like that you don't offer pork- free options for lunch. Also, please have an adult attend all field trips with camp counselors","park_name":"Ping Tom Park","sentiment":"Negative"},
+{"comment":" I wish that the camp offered a pork free menu, as over half of the worlds population does not consume pork and there are other meat alternatives such as beef, turkey, etc., - that kids seem to enjoy.","park_name":"Ping Tom Park","sentiment":"Negative"}]},
+     
+     {"name": "Swimming", "size":100,"sentiment":2,"year":"Y1","question":"Q2","comments":[{"comment":"I have two children that attended camp at different locations.  My daughter at Wilson on Racine, loved all the activites and they changed it up.  My son was at Ping Tom.  He enjoyed his experience but at times wanted things to be changed up a bit.  They followed a schedule and at times, he wanted a change (e.g., swimming daily).  Overall, both kids had a great experience and I will definitely enroll them next summer!","park_name":"Ping Tom Park","sentiment":"Positive"},
+{"comment":"They had a great time and their swimming really improved.","park_name":"Seward Park","sentiment":"Very Positive"},
+  {"comment":"My children LOVED the swimming. Maybe even go to a water pad park next time? Generally, more swimming instruction would be great.","park_name":"Lake Shore Park","sentiment":"Positive"},
+ {"comment":"I would like to see more reading and swimming enforced. Children need to learn how to swim and reading is fundamental. It's so important to have kids read a little every day.","park_name":"Union Park","sentiment":"Neutral"},
+{"comment":"I'd like to see more swimming instructions and lessons instead of free play in the water. In general, we were happy about the fact that swimming was part of the camp experience. Frankly, it was one of the main reasons I wanted my children to attend.","park_name":"Washington Park","sentiment":"Positive"}]},
+     
+	{"name": "Field Trips", "size":70,"sentiment":1,"year":"Y1","question":"Q2","comments":[{"comment":"comment1","park_name":"xyz"},
+	                                                                                      {"comment":"comment2","park_name":"abc"}]},	
+    {"name": "Bullying", "size":30,"sentiment":-1,"year":"Y1","question":"Q2","comments":[{"comment":"comment1","park_name":"xyz"},
+	                                                                                      {"comment":"comment2","park_name":"abc"}]},
+ 
+     
+     
+     
+    	{"name": "Counsellors", "size":70,"sentiment":1,"year":"Y2","question":"Q2","comments":[{"comment":"comment1","park_name":"xyz"},
+	                                                                                      {"comment":"comment2","park_name":"abc"}]},	
+     
+    {"name": "Swimming", "size":80,"sentiment":-2,"year":"Y2","question":"Q2","comments":[{"comment":"The swimming activities were much worse this year than last year. My son really disliked the instructor, who was actually really bad at teaching young children how to swim","park_name":"Garfield Park","sentiment":"Very Negative"},
+    {"comment":"My son hated Gary, the swimming instructor at the Garfield Park summer camp. This man was absolutely impatient and mean towards the children. He should get another job.","park_name":"Garfield Park","sentiment":"Very Negative"},
+                                                                                          {"comment":"Swimming was my children's favourite! ","park_name":"Lincoln Park","sentiment":"Positive"}
+                                                                                          ]},
+     
+     {"name": "Welcome Event", "size":20,"sentiment":-2,"year":"Y2","question":"Q2","comments":[{"comment":"comment1","park_name":"xyz"},
+	                                                                                      {"comment":"comment2","park_name":"abc"}]},
+     
+	{"name": "Food", "size":70,"sentiment":1,"year":"Y2","question":"Q2","comments":[{"comment":"comment1","park_name":"xyz"},
+	                                                                                      {"comment":"comment2","park_name":"abc"}]},	
+    {"name": "Activities", "size":100,"sentiment":-2,"year":"Y2","question":"Q2","comments":[{"comment":"comment1","park_name":"xyz"},
+	                                                                                      {"comment":"comment2","park_name":"abc"}]},
+ 
+    	{"name": "Field Trips", "size":50,"sentiment":1,"year":"Y2","question":"Q2","comments":[{"comment":"comment1","park_name":"xyz"},
+	                                                                                      {"comment":"comment2","park_name":"abc"}]},	
+    {"name": "Bullying", "size":30,"sentiment":-1.5,"year":"Y2","question":"Q2","comments":[{"comment":"comment1","park_name":"xyz"},
+	                                                                                      {"comment":"comment2","park_name":"abc"}]},	 
+    {"name": "Botanical Gardens", "size":20,"sentiment":-2,"year":"Y2","question":"Q2","comments":[{"comment":"The children's trip to the Botanical Gardens was ill-organized. Due to some children not showing up, they left over an hour late. By then, another group was already at the gardens and the field trip had to be delayed even further. When they finally got to enter, they had to rush trough the whole thing in less than an hour. Overall a negative experience for my daughter.","park_name":"Lincoln Park","sentiment":"Very Negative"}]}     
+
+	]
+	}
+     
+    

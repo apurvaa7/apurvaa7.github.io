@@ -1,0 +1,43 @@
+Index,Type,Question,Consistent number of columns throughout the years?
+Q1,YN,Was this your child(ren)'s first year attending a Chicago Park District day camp?,"check, consistent"
+Q2,M,How did you hear about camp?,"check, inconsistent"
+Q3,M,Why did you select the Chicago Park District day camp program?  (select all that apply),"check, inconsistent"
+Q4,YN,Do you believe the activities offered at camp were appropriate for your child(ren)'s age group?    ,"check, consistent"
+Q5,HS,How important are the following outcomes of your child(ren)'s day camp experience to you?  ,"check, consistent"
+Q5,,Ability to work and play as a team or a group,
+Q5a,,Greater self confidence and independence,
+Q5b,,Increased physical activity,
+Q5c,,"Learned a new skill, sport or activity",
+Q5d,,Remained in a safe and supportive environment,
+Q6,HSO,How satisfied are you with the following outcomes your child(ren) received at camp this summer?,"check, consistent"
+Q6,,Ability to work and play as a team or a group,
+Q6a,,Greater self confidence and independence,
+Q6b,,Increased physical activity,
+Q6c,,"Learned a new skill, sport or activity",
+Q6d,,Remained in a safe and supportive environment,
+Q7,HS,"With regards to your child(ren)'s day camp experience, please rate the following:","check, inconsistent"
+Q7,,Cleanliness of facility,
+Q7a,,Communication with staff,
+Q7b,,Educational opportunities,
+Q7c,,Meals/snacks,
+Q7d,,Quality of field trips,
+Q7e,,Quality of staff,
+Q7f,,Safety,
+Q7g,,Variety of activities,
+Q8,YN,"Did you receive the day camp newsletter providing updates and reminders for your child(ren)'s camp, throughout the summer? ","check, consistent"
+Q9,YNO,Did you find the day camp newsletters helpful and informative?,"check, consistent"
+Q11,S,"Overall, how satisfied were you with the camp program?  ","check, consistent"
+Q12,YN,Will you send your child(ren) back to a Chicago Park District camp next year and recommend it to others?,"check, consistent"
+Q13,D,At what park did your child(ren) attend camp?,"check, consistent"
+Q14,YN,Did your child(ren) attend any other camps outside the Chicago Park District this summer?,"check, consistent"
+Q17,HMO,"What did you hope your child(ren) would gain/achieve from his/her/their camp experience this year, and what do you think he/she/they actually did gain/achieve? (select all that apply)  ","check, inconsistent"
+Q17,,Ability to work and play as a team or a group,
+Q17a,,Ability to work and play as a team or a group,
+Q17b,,Greater self confidence and independence,
+Q17c,,Greater self confidence and independence,
+Q17d,,Increased physical activity,
+Q17e,,Increased physical activity,
+Q17f,,"Learned a new skill, sport or activity",
+Q17g,,"Learned a new skill, sport or activity",
+Q17h,,Remained in a safe and supportive environment,
+Q17i,,Remained in a safe and supportive environment,

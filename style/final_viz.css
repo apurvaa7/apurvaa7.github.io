@@ -1,0 +1,219 @@
+
+html, body {
+  width:100%;
+  height:100%;
+}
+
+/*css for selection control elements*/
+#selection_controls {
+    height: 100%;
+    width: 15%;
+    display: inline-block;
+    float: left;
+}
+
+#date-range {
+    text-align: center;
+}
+
+#main_questions {
+    width: 100%;
+}
+
+#selected_question {
+    font-size: 16px;
+}
+
+#selected_question_wrap {
+    padding-top: 10%;
+}
+
+#slider {
+    width:100%;
+    height: 33%;
+    padding-top: 40%;
+}
+
+#park_names {
+    width: 100%;
+}
+
+#parkSelector {
+    width: 100%;
+    height:25%;
+    padding-top: 30%;
+}
+
+#questionSelector {
+    width: 100%;
+    height:25%;
+}
+
+
+/*css for map*/
+
+#mapWrap {
+    height: 100%;
+    width:40%;
+    padding-left: 5%;
+    display: inline-block;
+    float: left;
+}
+
+#map {
+    width:  100%;
+    height: 95%;
+/*
+    display: inline-block;
+    padding-right: 30px;
+    float: right;  
+*/
+}
+
+#legend {
+         background: white;
+         font-weight: bold;
+     }
+
+
+/*css for chart*/       
+#myChart {
+    width:35%;
+    height:100%;
+    float: right;
+    display: inline-block; 
+}   
+
+
+#chart_controls {
+    width: 100%;
+    height: 50px;
+}
+
+#draggable {
+    display: inline-block;
+    /*border-radius: 8px;*/
+    padding: 10px;
+    z-index:99;
+    float: left;
+}
+
+#chartLegend {
+    display: inline-block;
+    padding: 10px;
+    z-index:99;
+    float:left;
+}
+
+#chng_base {
+    display: inline-block;
+    float: left;
+}
+
+#chartMisc {
+    height: 100%;
+    width: 7%;
+    display:inline-block;
+    float: right;
+        
+}
+
+#chartLegend #txt {
+    font-family: helvetica,'Lucida Sans Unicode','Lucida Grande', Verdana, Arial, sans-serif;   
+    font-size: 12px;
+    margin: 2px;
+    display: inline-block;
+}
+
+#draggable p {
+    font-family: helvetica,'Lucida Sans Unicode','Lucida Grande', Verdana, Arial, sans-serif;   
+    font-size: 12px;
+    margin: 2px;
+}
+
+#color-box {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+/*    float: left;*/
+}
+
+.bs-example {
+    height: 100%;
+    width:100%;
+}
+
+.tab-content {
+    height:100%;
+    width: 100%
+}
+
+#sectionA {
+    height: 95%;
+    width: 97%;
+}
+
+
+
+
+/* css for text */
+text {
+  font: 10px sans-serif;
+}
+
+#inputWrapper {
+    height: 10%;
+}
+
+#mylegend {
+    width:100%;
+    display: inline-block;
+/*    float:left;*/
+}
+
+#legendCanvas {
+    width: 100%;
+}
+
+#chart2 {
+    width: 640px;
+    height: 480px;
+}
+
+#sectionB {
+    height: 95%;
+    width: 100%;
+}
+
+#bubbles_and_input {
+    height:100%;
+    width:50%;
+    float: left;
+    display: inline-block;
+}
+
+#inputWrapper {
+    margin-bottom: 10%;
+}
+
+#bubble {
+    width: 100%;
+}
+
+.bubbleText {
+    color: white;
+}
+
+#comment_table {
+    width: 50%;
+    height:100%;
+    float: left;
+    display: inline-block;
+}
+
+#commentCol{
+    word-wrap: break-word;
+    max-width: 70px;
+}
+
+
