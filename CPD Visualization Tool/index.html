@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CPD Survey Visualization</title>
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+<link  rel="stylesheet" href="dist/css/bootstrap.min.css"/>
+<!--<script src="colorbrewer.min.js"></script>-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style/final_viz.css">
+<link href="dist/css/select2.min.css" rel="stylesheet" />
+
+<style type="text/css">
+	.bs-example{
+		margin: 20px;
+	}
+</style>
+</head>
+<body>
+<div class="bs-example">
+    <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#sectionA">Trends and Comparisons</a></li>
+        <li><a data-toggle="tab" href="#sectionB">Exploring Comments</a></li>
+        <li><a data-toggle="tab" href="#sectionC">About</a></li>
+    </ul>
+    <div class="tab-content">
+        <div id="sectionA" class="tab-pane fade in active">
+            <div id="selection_controls">
+                
+                <div id = "slider"  class="ui-widget">
+<!--                    <label for="slider-range">Select a Range of Years: </label>-->
+                    <div id="slider-range"></div>
+                    <div id = "date-range"></div>
+                </div>
+                
+                
+                <div id = "questionSelector" class="ui-widget">
+<!--                  <label for="main_questions">Type to see Available Questions: </label>-->
+                  <select id="main_questions"></select>
+                    <div id='selected_question_wrap'>
+                        <text id='selected_question'></text>
+                    </div>
+                </div>
+                
+                <div id = "parkSelector" class="ui-widget">
+<!--                  <label for="park_names">Type to See Parks: </label>-->
+                  <select id="park_names" multiple="multiple"></select>
+                </div>
+
+            </div>
+   
+            <div id="chartMisc">
+                <button type="button" class="btn btn-primary" id="chng_base">Change <br> Baseline</button>
+                <div id="chartLegend" class="ui-widget-content"></div>
+                <div id="draggable" class="ui-widget-content"></div>
+            </div>
+            
+            <div id='myChart'></div>
+            <div id = "mapWrap" >
+                <div id="map"></div>
+                <div id="legend">
+                    <div><img src="icons/park.png"> Park Area</div>
+                    <div><img src="icons/unselected.png"> Unselected Park</div>
+                    <div><img src="icons/selected.png"> Selected Park</div>
+                </div>
+            </div>
+                
+        </div>
+        
+        <div id="sectionB" class="tab-pane fade">
+           
+			
+            <div id="bubbles_and_input">
+                <div id="inputWrapper">
+            <div>
+                <select id="inputQuestion" class="js-input-question">
+                 <option value="Q1">What things about the camp program would you recommend we change?</option>
+                 <option value="Q2">Please feel free to provide any additional comments.</option>
+                </select>
+            </div>
+            <select id="inputYear" class="js-input-question">
+                 <option value="Y1">2009</option>
+                 <option value="Y2">2010</option>   
+				 <option value="Y3">2011</option>
+				 <option value="Y4">2012</option>
+				 <option value="Y5">2013</option>
+				 <option value="Y6">2014</option>   
+				 <option value="Y7">2015</option>
+                </select>
+               <br>
+               <div id = "mylegend"></div>
+            </div>
+                <div id = "bubble"></div>
+        
+             	
+            </div>
+            <div id="comment_table">
+                  <!-- Default panel contents -->
+                    <div class="panel-heading"><b>Text Comments</b></div>
+
+                  <!-- Table -->
+                  <table id = "myTable" class="table">
+                   <thead>
+                      <tr>
+                        <th>Comment</th>
+                        <th>Park</th>
+                        <th>Sentiment</th>
+                      </tr>
+                    </thead>
+                  </table>
+                </div>
+           </div>
+    
+        <div id="sectionC" class="tab-pane fade">
+                    <!-- #######  About section! #########-->
+                    <h1 style="color: #0571b0;">About</h1>
+                    <p>This interactive visualization tool was built for the Chicago Park District by a group of Northwestern University Master of Science in Analytics students during a 9-month industry Practicum in 2015/2016. Its objective is to facilitate exploratory analysis of summer camp survey results over several dimensions, including years, parks, and questions. On top of that, functionality for exploring replies given in the open comments section of the surveys is also provided.</p>
+                    <h2 style="color: #0571b0;">Trends and Comparisons</h2>
+                    <p>This tab provides an overview of survey responses on a per-question level. The tab is broadly organized into three blocks, which correspond to the three steps for creating an analysis: <ul>
+                    <li>Left: Choose question to be analyzed, as well as the years and parks.</li>
+                    <li>Middle: Pick park or group of parks to be analyzed. Any parks listed held at least one summer camp in the past couple of years.</li>
+                    <li>Right: With the input from the first two parts, this area is reserved for the output of bar chart for analysis. The base category (where the y-axis crosses) can be changed to emphasize desired response categories and hovering over a bar will highlight it, as well as provide more details about this certain piece of information.</li>
+                    </ul>
+                    <p>It is up to the user to include as many parks and years into the analysis as desired. However, it becomes harder to detect trends over several years when many parks are included into the analysis at the same time. Rather than restricting the user to only be able to display a certain number of parks or years in the bar chart area, we found it more useful to let the user decide how much he wants to put onto one chart and exclude some of the information if necessary.
+
+                    <h2 style="color: #0571b0;">Exploring Comments</h2>
+                    <p>This tab implements functionality for keyword extraction and sentiment analysis. Although it was designed to be intuitive and easy to understand, here is a short outline of what the bubbles mean and how the analysis works:</p>
+                    <p>Each bubble represents a word that was commonly mentioned to the "Please feel free to provide additional comments related to your child(ren)'s camp experience" question of the survey. The size of the bubbles represents how often a word was mentioned. The color of a bubble represents the overall sentiment of the sentence a word is mentioned in. Sentiment analysis uses a dictionary of English words associated with positive sentiment (such as great, like, thanks) and negative sentiment (such as bad, poor, aweful), as well as the magnitude of the sentiment. An algorithm calculates the sentiment for each word in a bubble and colors the bubble according to the sentiment, with blue pertaining to positive and red to negative sentiment. Clicking on a bubble will also list all the actual comments associated with that keyword, along with the park the comment is referring to.
+                    </p>
+
+                    <p><img style="float: right;" src="https://upload.wikimedia.org/wikipedia/en/7/76/NU_seal.png" alt="html table div" width="80" /> <img style="float: right;" src="http://3.cdn.nhle.com/blackhawks/images/upload/2013/12/CPD_Seal_Col.png" alt="html table div" width="80" /></p>
+            <div id = "bubble"></div>
+
+        </div>
+</div>
+    
+
+   
+<div id="mfooter">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/zingchart.min.js"></script> 
+    
+    <script type="text/javascript" src="js/zingchart.jquery.js"></script>
+    
+    <script type="text/javascript" src="js/data_transform.js"></script>
+    <script type="text/javascript" src="js/UI.js"></script>
+    <script type="text/javascript" src="js/utility.js"></script>
+    <script type="text/javascript" src="js/draw_chart.js"></script>
+    
+    <script src="js/d3.js"></script>
+    <script type="text/javascript" src="js/queue.js"></script>
+    <script src="dist/js/select2.min.js"></script>
+    <script type="text/javascript" src="js/bubble.js"></script>
+    
+    <script src="js/map.js"></script>
+        <script     
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBy7yZqGyykEiKg3kqzL5ocnKG6awHQS5c&callback=initMap"
+            async defer>
+        </script>
+    
+    
+    
+    <script src="https://cdn.datatables.net/1.10.11/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.11/js/dataTables.bootstrap.min.js"></script>
+    <script src="https://d3js.org/d3-array.v0.7.min.js"></script>
+<script src="https://d3js.org/d3-collection.v0.1.min.js"></script>
+<script src="https://d3js.org/d3-color.v0.4.min.js"></script>
+<script src="https://d3js.org/d3-format.v0.5.min.js"></script>
+<script src="https://d3js.org/d3-interpolate.v0.7.min.js"></script>
+<script src="https://d3js.org/d3-time.v0.2.min.js"></script>
+<script src="https://d3js.org/d3-time-format.v0.3.min.js"></script>
+<script src="https://d3js.org/d3-scale.v0.7.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/1.10.0/d3-legend.js"></script>
+
+</div>
+
+</body>
+</html>                                		
+    
+
